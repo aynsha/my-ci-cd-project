@@ -16,6 +16,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        
+      - name: Fix Jest permissions
+        run: chmod +x node_modules/.bin/jest 
 
       - name: Run tests
         run: npx jest
@@ -27,3 +30,4 @@ jobs:
     steps:
       - name: Deploy to test environment
         run: echo "Deploying to test server..."
+       
