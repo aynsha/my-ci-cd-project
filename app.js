@@ -7,7 +7,7 @@
 
 // module.exports = app;
 
-function sum(a, b) {
+function app(a, b) {
     return a + b;
   }
-  module.exports = sum;
+  module.exports = app;
